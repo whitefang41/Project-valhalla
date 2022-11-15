@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logoo.png" />
+    
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+</head>
+
+<body>
+    <div class="popup" onclick="myFunction()">
+<lord-icon src="https://cdn.lordicon.com/nocvdjmh.json" trigger="morph" style="width:32px;height:32px"></lord-icon>
+<span class="popuptext" id="myPopup">Rules: <br>
+Axe beats Sword <br> Shield beats Axe <br> Sword beats Shield <br>
+(Axe is Rock <br> Shield is Paper <br> Sword is Scissors)<br>-------------- <br>To Play Again <br> Reload The Page</span>
+</div>
+    <!-- Welcome IMG -->
+    <img src="img/welcome.png" alt="welcome" height="40" width="250">
+    <img src="img/warrior.png" alt="solider" height="50" width="250">
+    <p></p>
+    <img src="img/chose.png" alt="choose" height="55" width="650">
+
+    <!-- Rock - Paper - Scissors IMG -->
+    <div class="buttons">
+        
+        <button class="btn"><img src="img/axe1.png" class="pImg" alt="axe" id="axe" height="170" width="320"/></button>
+        <button class="btn"><img src="img/shield1.png" class="pImg" alt="shield" id="shield" height="190" width="350"/></button>
+        <button class="btn"><img src="img/sword1.png" class="pImg" alt="sword" id="sword" height="170" width="320"/></button>
+    
+    </div>
+
+<!-- Player Score-->
+    <div class="score">
+        
+        <img src="img/player.png" alt="warrior" class="sc" height="40" width="250"> <br> 
+        <img src="img/enemy.png" alt="enemy" class="sc" height="40" width="250">
+        
+        <h1 class="playerScore">0</h1>
+        <h1 class="computerScore">0</h1>
+
+        <img src="img/ties.png" alt="ties" height="40" width="90">
+        <div class="score">
+            <h1 class="ties">0</h1>
+          </div>
+    </div>
+    <h3 class="computerChoice"></h3>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+    </div>
+    
+</body>
+<script  src="script.js"></script>
+<script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+</html>

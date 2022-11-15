@@ -1,0 +1,114 @@
+html {
+    background: url(img/bg3.jpg);
+    background-size: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.about{
+    padding-right: 1000px;
+}
+
+.btn {
+    margin: 60px;
+    border-radius: 13px;
+    border-color: rgb(149, 149, 149);
+    background: linear-gradient(to top, rgba(250, 223, 223, 0.578), rgba(255, 255, 255, 0));
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8
+}
+
+.score{
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-gap: 40px;
+-moz-column-gap: 40px;
+column-gap: 40px;
+-webkit-column-rule: 1px solid transparent;
+-moz-column-rule: 1px solid transparent;
+column-rule: 1px solid transparent;
+padding: 0px 50px 0px 0px;
+}
+
+.sc{
+  margin: 4px;
+}
+
+.ties{
+  padding: 0px 0px 0px 35px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+    user-select: none;
+    left: 650px;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  @font-face {
+    font-family: NorseBold-2Kge;
+    src: url('NorseBold-2Kge.otf');
+  }
+  .computerChoice{
+    font-family: NorseBold-2Kge;
+    color: #fff;
+  }
+  .winner{
+    font-family: NorseBold-2Kge;
+    color: #fff;
+  }
+  .playerScore{
+    font-family: NorseBold-2Kge;
+  }
+  .computerScore{
+    font-family: NorseBold-2Kge;
+  }
+  .ties{
+    font-family: NorseBold-2Kge;
+  }
